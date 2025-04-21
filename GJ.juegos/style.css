@@ -1,0 +1,76 @@
+
+body{
+    background-image: url(imagenes-de-oferta/FondoMiles.jpg);
+    backface-visibility: visible;
+    object-fit: cover;
+}
+
+div, body, h1, nav, h2, li, ul, a{
+    margin: 0;
+    padding: 0;
+}
+
+/*               NavBar                                  /*/
+
+.navbar{
+    margin: 0;
+    padding: 0;
+    width: 100vh;
+}
+
+
+
+/*                   Typado del Titulo                  /*/
+
+
+h1{
+    text-align: center;
+    color: antiquewhite;
+}
+
+.typewriter h1{
+    padding-left: 30px;
+    overflow: hidden;
+    text-align: center;
+    border-right: .10em solid rgb(24, 26, 26);
+    white-space: nowrap;
+    margin: 0 auto ;
+    width: 250px;
+    animation: 
+        typing 3s steps(100, end),
+        blink-caret .65s step-end infinite;
+        
+}
+
+@keyframes typing{
+    from {width: 0}
+    to {width: 100%}
+}
+@keyframes blink-caret{
+    from, to {border-color: transparent;}
+    40% { border-color: cyan;}
+}
+
+/*                                   Section Carusel          /**/                                           
+
+.flex-container{
+    padding-left: 100px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 300px;
+
+}
+.size-img{
+    height: 300px;
+    object-fit: cover;
+    flex-grow: 1;
+}
+.carusel-size{
+    position: relative;
+    object-fit:cover;
+    justify-content: center;
+    justify-items: center;
+    text-align: justify;
+}
